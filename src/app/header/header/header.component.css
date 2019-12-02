@@ -1,0 +1,14 @@
+.badgeIcon {
+margin-right: 15px;
+}
+
+  .example-tooltip-red {
+    background: #b71c1c;
+    font: bold;
+    height: 20px;
+    
+  }
+
+  .header-contents {
+    flex: 1 1 auto;
+  }

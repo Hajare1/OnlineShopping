@@ -1,0 +1,25 @@
+<h1 mat-dialog-title><img src="{{productDetails.imageUrl}}" alt="Photo of a Shiba Inu">
+   <span style="margin-left: 15px;margin-bottom: 15px;"> {{productDetails.name}}</span></h1>
+<div mat-dialog-content>
+        <span class="chips"> Review Count
+                <mat-chip color="primary" selected>{{productDetails.reviewCount}}
+            
+            </mat-chip></span>
+<mat-list>
+        <!-- price: '₹ 1,799.00',
+        domain: 'amazon.in',
+       
+        reviewCount: 3013, -->
+        <mat-list-item><b> Product Id:</b> {{productDetails.productId}} </mat-list-item>
+        <mat-list-item><b>Category:</b>  {{productDetails.category}} </mat-list-item>
+        <mat-list-item><b>Title:</b>  {{productDetails.title}} </mat-list-item>
+        <mat-list-item><b>Latest Review Date:</b>  {{productDetails.latestReviewDate | date:'medium'}} </mat-list-item>
+        <mat-list-item><b>CreatedAt:</b>   {{productDetails.createdAt | date:'medium'}} </mat-list-item>
+        <mat-list-item><b>Price:</b>   {{productDetails.price }} </mat-list-item>
+       </mat-list>
+       
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button cdkFocusInitial [mat-dialog-close] color="primary">Done</button>
+</div>

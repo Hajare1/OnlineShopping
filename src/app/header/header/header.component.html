@@ -1,0 +1,10 @@
+<mat-toolbar style="width: 100%;" color="primary">
+  Welcome To Shop
+  <span class="header-contents"></span>
+  <span>
+   <mat-icon class="badgeIcon" (click)="getCartDetails()" style="cursor: pointer;" matBadge="{{productService.getCartCount()}}" matBadgeColor="warn">add_shopping_cart</mat-icon>
+   <input matInput style="margin-left: 10px;" type="search" placeholder="Search Items" >
+   <mat-icon style="margin-left: 15px;"  matTooltip="Logout"
+   matTooltipClass="example-tooltip-red">logout</mat-icon>
+   </span> 
+  </mat-toolbar>
