@@ -10,15 +10,18 @@
         domain: 'amazon.in',
        
         reviewCount: 3013, -->
-        <mat-list-item><b> Product Id:</b> {{productDetails.productId}} </mat-list-item>
-        <mat-list-item><b>Category:</b>  {{productDetails.category}} </mat-list-item>
-        <mat-list-item><b>Title:</b>  {{productDetails.title}} </mat-list-item>
-        <mat-list-item><b>Latest Review Date:</b>  {{productDetails.latestReviewDate | date:'medium'}} </mat-list-item>
-        <mat-list-item><b>CreatedAt:</b>   {{productDetails.createdAt | date:'medium'}} </mat-list-item>
-        <mat-list-item><b>Price:</b>   {{productDetails.price }} </mat-list-item>
+        <mat-list-item><b> Product Id<span class="spacing">:</span></b> {{productDetails.productId}} </mat-list-item>
+        <mat-list-item><b>Category<span class="spacing">:</span></b>  {{productDetails.category}} </mat-list-item>
+        <mat-list-item><b>Title<span class="spacing">:</span></b>  {{productDetails.title}} </mat-list-item>
+        <mat-list-item><b>Latest Review Date<span class="spacing">:</span></b>  {{productDetails.latestReviewDate | date:'medium'}} </mat-list-item>
+        <mat-list-item><b>CreatedAt<span class="spacing">:</span></b>   {{productDetails.createdAt | date:'medium'}} </mat-list-item>
+        <mat-list-item><b>Price<span class="spacing">:</span></b>   {{productDetails.price }} </mat-list-item>
        </mat-list>
        
   
+</div>
+<div *ngFor="let rate of productDetails.topScores">
+<app-rating [rating]="rate.score" [topic]="rate.topic"></app-rating>
 </div>
 <div mat-dialog-actions>
   <button mat-raised-button cdkFocusInitial [mat-dialog-close] color="primary">Done</button>

@@ -22,6 +22,7 @@ import { ProductListComponent } from './shopping/product-list/product-list.compo
 import { ProductDetailComponent } from './shopping/product-detail/product-detail.component';
 import { CartDetailsComponent } from './shopping/cart-details/cart-details.component';
 import { FooterComponent } from './footer/footer.component';
+import { RatingComponent } from './shopping/rating/rating.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     ProductListComponent,
     ProductDetailComponent,
     CartDetailsComponent,
-    FooterComponent
+    FooterComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
